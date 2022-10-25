@@ -1,0 +1,223 @@
+/*Preliminary CSS*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-Parisienne :'Parisienne', cursive;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background: #19A1AE;
+
+}
+
+
+/*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+/*Main layout*/
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 720px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background: #19A1AE;
+}
+
+.pattern-top {
+    display: flex;
+    opacity: 0.5;
+    transform: rotate(35deg);
+    margin-top: -550px;
+    margin-left: -250px;
+    width: 978px;
+    height: 976px;
+    z-index: 1;
+}
+
+.card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    top: 173px;
+    width: 350px;
+    height: 374px;
+    z-index: 3;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+    border-radius: 15px;
+}
+
+.pattern-bottom {
+    display: flex;
+    opacity: 0.5;
+    transform: rotate(350deg);
+    margin-top: 350px;
+    margin-right: -250px;
+    width: 978px;
+    height: 976px;
+    z-index: 1;
+}
+
+/*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+Responsive - Main layout*/
+@media only screen and (max-width: 375px) {
+    .container {
+        max-width: 375px;
+        height: 667px;
+    }
+
+    .card {
+        top: 147px;
+        width: 326px;
+        height: 374px;
+    }
+
+    .pattern-top {
+        margin-top: -350px;
+        margin-left: -150px;
+        width: 622px;
+        height: 621px;
+    }
+
+    .pattern-bottom {
+        margin-top: 320px;
+        margin-right: -200px;
+        width: 622px;
+        height: 621px;       
+    }
+}
+
+
+/*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+/* customization of card */
+.pattern-card {
+    background-image: url(./images/bg-pattern-card.svg);
+    width: 350px;
+    height: 140px;
+}
+.card img {
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    margin-top: -52px;
+}
+
+.name {
+    margin-top: 19px;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #2E3349;
+}
+
+.age {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #6B7082;
+    margin-left: 2px;
+}
+
+.city {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #6B7082;
+    margin-top: 8px;
+}
+
+hr {
+    width: 100%;
+    border: 0px solid;
+    height: 1.5px;
+    background: #E8E9EC;
+    margin-top: 28px;
+}
+
+.stats-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    width: 249px;
+    height: 40px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 59px;
+    height: 40px;
+}
+
+.number {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #2E3349;
+}
+
+.subtitle {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #6B7082;
+    margin-top: 7px;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+/*Footer*/
+.attribution {
+    font-size: 14px; 
+    text-align: center;
+    color: #E8E9EC;
+    background-color: #2e334917;
+}
+
+.attribution c,a {
+    text-decoration: none; 
+}
+
+.ddd {
+    font-size: 16px; 
+    color: rgb(255, 120, 0);
+    font-family: 'Monotype Corsiva', var(--font-Parisienne);
+}
+
+/* @media only screen and (max-width: 768px) {
+
+} */
